@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="nxt.js"></script>
+  <style >
+  	table {
+  counter-reset: section;
+}
+
+.count:before {
+  counter-increment: section;
+  content: counter(section);
+}
+ 
+      input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+    }
+
+  </style>
+  </head>
+<body onload="nxt()">	
+	<div class="container jumbotron ">
+		<div class="">
+		
+			<b>Enter Register Number :</b> <input type="number" name="" id="myInput">
+		
+		<div class="text-right ">
+		<a href="loginpg.html"><button type="button" class =" ml-5 py-1 px-5 btn-success ">Home</button></a>		
+	</div>	
+</div>
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<legend>Students Details</legend>
+			<caption>***if the students data are above the table***</caption>
+			<thead class="bg-secondary mx-auto text-center">
+				<tr>
+					<th>S.no</th>
+					<th>UserId</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>dob</th>
+					<th>Gender</th>
+					<th>Department</th>
+					<th>Cgpa</th>
+				</tr>
+			</thead>
+			<tbody id="result">				
+			</tbody>			
+		</table>
+	</div>
+	</div>
+</body>
+</html>

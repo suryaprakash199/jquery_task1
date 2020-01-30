@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="vali.js"></script>
+<style >
+  
+      input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+    }
+</style>
+  
+</head>
+<body>
+<div class="container-fluid bg-light py-3">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+                <div class="card card-body">
+                    <h3 class="text-center mb-4">Students Details</h3>
+                    <div class="alert alert-danger">
+                        <a class="close font-weight-light" data-dismiss="alert" href="#">×</a>Enter The Details Given Input fields.
+                    </div>
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control input-lg" type="text" id="unam" placeholder="Enter Your Name" name="uname" required="">
+                            <div id="erorname"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input-lg" type="text" id="uid" placeholder="Enter Your UserId" name="usid" required="">
+                            <span id="erorid"></span>
+                        </div>
+                        <div class="form-group ">
+                            <input class="form-control input-lg" type="text" id="fage" placeholder="Enter your Age" name="age"  required="">
+                            <span id="erorage"></span>
+                        </div>
+                        <div class="form-group ">
+                            <input class="form-control input-lg" type="date" id="udob" placeholder="Enter your DOB" name="dob" required="">
+                            <span id="erordob"></span>
+                        </div>
+                        <div class="form_group">
+                  <label for="umale">Gender :</label>
+                   <div class="radio" >    
+                  <label><input type="radio" class="gender" name="umale" value="male">Male</label>
+                  <label><input type="radio" class="gender" name="umale" value="fe-male">Fe-Male</label>
+                  <label><input type="radio" class="gender" name="umale" value="others">Others</label>
+                     </div>
+                     <span id="eror_gender"></span>  
+                     </div>
+                        <div class="form-group">
+                            <select class="form-control input-lg" id="dept">
+                                <option selected="" disabled="">Depatments</option>
+                                <option>Mechanical</option>
+                                <option>Electrical</option>
+                                <option>Computer Science</option>
+                                <option>civil</option>
+                            </select>
+                            <span id="erordept"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input-lg" id="ucgpa" placeholder="Overall CGPA" name="cgp"  type="text" required="">
+                            <span id="erorcgpa"></span>
+                        </div>
+                        <div class="checkbox">
+                            <label class="small">
+                                <input name="terms" type="checkbox" required="">I have read and agree to the Informations <a href="#">terms of service</a>
+                            </label>
+                        </div>
+                        <input class="btn btn-lg btn-primary btn-block" value="Submit" type="submit" id="btnn">
+                    </fieldset>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
